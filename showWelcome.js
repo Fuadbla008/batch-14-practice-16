@@ -29,4 +29,4 @@ const showWelcome = (userName) => {
     }
 }
 
-console.log(showWelcome('Miss Liya'));
+showWelcome('Miss Liya')
