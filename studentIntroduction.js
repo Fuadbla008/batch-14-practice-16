@@ -39,6 +39,10 @@ Backtick (`) দিয়ে Template Literal লিখে `${}` এর ভে
 */
 
 
-const studentIntroduction = () =>{
-    
+const studentIntroduction = (studentInfo) =>{
+    const {name,age,course} = studentInfo;
+    return `My name is ${name}. I am ${age} years old. I am learning ${course}.`
 }
+
+
+console.log(studentIntroduction({name: "Rafi",age: 18,course: "MongoDB"}));
